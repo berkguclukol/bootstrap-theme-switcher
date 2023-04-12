@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="light" data-light-value="" data-dark-value="">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,17 +11,77 @@
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="node_modules/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
-<body class="line-numbers">
+<body>
 
 <div class="container mt-3">
-    <div class="d-flex align-items-center gap-2">
+    <div class="d-flex align-items-center gap-2 mb-4">
         <img src="dist/logo-set/bootstrap-theme-switcher-logo.svg" alt="" width="75">
         <h1 class="fw-bold">Bootstrap Theme Switcher Demo Page <span class="badge bg-secondary">v1.0</span></h1>
     </div>
+
+
+    <!-- DEFAULT VALUE -->
     <div class="row">
         <div class="col">
+            <h4>with Default Value</h4>
             <hr>
-<pre><code class="language-javascript">if (typeof Prism === 'undefined' || typeof document === 'undefined') {
+        </div>
+        <div class="d-grid mb-2">
+            <button class="btn btn-primary theme-changer-btn"></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <pre class="language-markup">
+<code class="language-markup" data-lang="html">&lt;button class="btn btn-primary theme-changer-btn" data-light-value="Açık Mod" data-dark-value="Koyu Mod"></code></pre>
+        </div>
+    </div>
+    <!-- # DEFAULT VALUE -->
+
+    <!-- OWN VALUE -->
+    <div class="row">
+        <div class="col">
+            <h4>with Buttons Value</h4>
+            <hr>
+        </div>
+        <div class="d-grid mb-2">
+            <button class="btn btn-primary theme-changer-btn"></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <pre class="language-markup">
+<code class="language-markup" data-lang="html">&lt;button class="btn btn-primary theme-changer-btn"></code></pre>
+        </div>
+    </div>
+    <!-- # OWN VALUE -->
+
+
+
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+            <button
+                    class="btn btn-primary theme-changer-btn"
+                    data-light-value="berk"
+                    data-dark-value="uzay"
+            ></button>
+        </div>
+        <div class="col">
+            <button
+                    class="btn btn-primary theme-changer-btn"
+                    data-light-value='<i class="bi bi-sun"></i>'
+                    data-dark-value='<i class="bi bi-moon"></i>'
+            ></button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <pre><code class="language-html"  data-src="index.html"></code></pre>
+            <hr>
+            <pre><code class="language-javascript">if (typeof Prism === 'undefined' || typeof document === 'undefined') {
 return;
 }</code></pre>
         </div>
@@ -31,5 +91,6 @@ return;
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 <script src="node_modules/prismjs/components/prism-core.min.js"></script>
 <script src="node_modules/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
+<script src="dist/js/theme_switcher.min.js"></script>
 </body>
 </html>
