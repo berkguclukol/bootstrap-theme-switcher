@@ -1,22 +1,35 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap Theme Switcher Demo Page</title>
+    <!-- Favicons -->
+    <link rel="icon" href="dist/logo-set/bootstrap-theme-switcher-logo.svg">
+    <meta name="theme-color" content="#712cf9">
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="node_modules/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="line-numbers">
 
 <div class="container mt-3">
+    <div class="d-flex align-items-center gap-2">
+        <img src="dist/logo-set/bootstrap-theme-switcher-logo.svg" alt="" width="75">
+        <h1 class="fw-bold">Bootstrap Theme Switcher Demo Page <span class="badge bg-secondary">v1.0</span></h1>
+    </div>
     <div class="row">
         <div class="col">
-            <h1 class="fw-bold">Bootstrap Theme Switcher Demo Page <span class="badge bg-secondary">v1.0</span></h1>
+            <hr>
+<pre><code class="language-javascript">if (typeof Prism === 'undefined' || typeof document === 'undefined') {
+return;
+}</code></pre>
         </div>
     </div>
 </div>
 
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="node_modules/prismjs/components/prism-core.min.js"></script>
+<script src="node_modules/prismjs/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,5 @@
 node_modules
 .idea
 package-lock.json
+/dist/logo-set/logo_sets.psd
+/dist/logo-set/bootstrap-theme-switcher-logo.ai
