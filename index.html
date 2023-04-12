@@ -33,7 +33,7 @@
     <div class="row">
         <div class="col">
             <pre class="language-markup">
-<code class="language-markup" data-lang="html">&lt;button class="btn btn-primary theme-changer-btn" data-light-value="Açık Mod" data-dark-value="Koyu Mod"></code></pre>
+<code class="language-markup" data-lang="html">&lt;button class="btn btn-primary theme-changer-btn"></code></pre>
         </div>
     </div>
     <!-- # DEFAULT VALUE -->
@@ -45,46 +45,45 @@
             <hr>
         </div>
         <div class="d-grid mb-2">
-            <button class="btn btn-primary theme-changer-btn"></button>
+            <button class="btn btn-primary theme-changer-btn" data-light-value="Light" data-dark-value="Dark"></button>
         </div>
     </div>
     <div class="row">
         <div class="col">
             <pre class="language-markup">
-<code class="language-markup" data-lang="html">&lt;button class="btn btn-primary theme-changer-btn"></code></pre>
+<code class="language-markup" data-lang="html">&lt;button
+    class="btn btn-primary theme-changer-btn"
+    data-light-value="Light"
+    data-dark-value="Dark">
+&lt;/button>
+</code></pre>
         </div>
     </div>
     <!-- # OWN VALUE -->
 
-
-
+    <!-- wICON VALUE -->
     <div class="row">
         <div class="col">
-
+            <h4>Icon Value</h4>
+            <hr>
         </div>
-        <div class="col">
-            <button
-                    class="btn btn-primary theme-changer-btn"
-                    data-light-value="berk"
-                    data-dark-value="uzay"
-            ></button>
-        </div>
-        <div class="col">
-            <button
-                    class="btn btn-primary theme-changer-btn"
-                    data-light-value='<i class="bi bi-sun"></i>'
-                    data-dark-value='<i class="bi bi-moon"></i>'
-            ></button>
+        <div class="d-grid mb-2">
+            <button class="btn btn-primary theme-changer-btn" data-light-value='<i class="bi bi-sun"></i>' data-dark-value='<i class="bi bi-moon"></i>'></button>
         </div>
     </div>
     <div class="row">
         <div class="col">
-            <pre><code class="language-html"  data-src="index.html"></code></pre>
-            <hr>
-            <pre><code class="language-javascript">if (typeof Prism === 'undefined' || typeof document === 'undefined') {
-return;
-}</code></pre>
+            <pre class="language-markup">
+<code class="language-markup" data-lang="html">&lt;button
+    class="btn btn-primary theme-changer-btn"
+    data-light-value='&lt;i class="bi bi-sun">&lt;/i>'
+    data-dark-value='&lt;i class="bi bi-moon">&lt;/i>'>
+&lt;/button>
+</code></pre>
         </div>
+    </div>
+    <!-- # wICON VALUE -->
+
     </div>
 </div>
 
