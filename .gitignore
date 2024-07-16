@@ -3,3 +3,4 @@ node_modules
 package-lock.json
 /dist/logo-set/logo_sets.psd
 /dist/logo-set/bootstrap-theme-switcher-logo.ai
+/design-elements/
